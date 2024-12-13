@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+  
+    <title>Resumen de Compra</title>
+</head>
+<body>
+    <header>
+
+            <div> <img src="./IMG/logo2.jpg" > </div>
+            <h1>Todo Herramientas</h1>
+
+          <h1>Gracias por su Compra</h>
+            <hr>
+
+    </header>
+    <main>
+        <section>
+            <div id="detalle"></div>
+        </section>
+
+    </main>
+  
+  
+    <form id="formulario" action="https://formspree.io/f/meoqorrw" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+        <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        <br><br>
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+        
+    </form>
+
+    <a href="index.html"><button>Volver</button></a>
+    <footer>
+        <h2 id="contacto">Contacto</h2>
+        <p>Email: diegotaras@gmail.com</p>
+        <p>Teléfono: (+54) 11-4559-2572
+        
+        <a class="fab fa-whatsapp" href="https://wa.me/5491145592572/?text=%20Todo%20Herramientas" target="_blank">
+        <img src="./IMG/logo-wasap.png" width="30" height="30"> </a>
+      
+        </p>
+      </footer>
+      
+  
+    <div id="detalle"></div>
+    <hr>
+    
+    <script src="/js/compra.js"> </script>
+</body>
+</html>

@@ -23,49 +23,64 @@
                 <li><a href="Formulario.html">Contacto</a></li>
             </ul>
         </nav>
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
     </header>
 
-    <section id="productos">
-        <h2>Productos Destacados</h2>
+   
+
+<h2>Productos Destacados</h2>
+<main> 
         <div class="productos-container">
             <div class="producto">
-                <img src="./IMG/Martillo.jpg" alt="Herramienta 1">
+                <h2>$ 4500.-</h2>
+                <img src="./IMG/Martillo.jpg">
                 <h3>Martillos</h3>
-                <button> Comprar </button>
-                
+                <button id="btnComprar" onclick="agregarProducto('Martillo', 4500)">Comprar</button>
             </div>
+            
             <div class="producto">
-                <img src="./IMG/Destornillador.jpg" alt="Herramienta 2">
+                <h2>$ 2500.-</h2>
+                <img src="./IMG/Destornillador.jpg">
                 <h3>Destornilladores</h3>
-                <button> Comprar </button>
-                
+                <button id="btnComprar" onclick="agregarProducto('Destornillador', 2500)">Comprar</button>
             </div>
             <div class="producto">
-                <img src="./IMG/Pinzas.jpg" alt="Herramienta 3">
+                <h2>$ 3200.-</h2>
+                <img src="./IMG/Pinzas.jpg" >
                 <h3>Pinzas</h3>
-                <button> Comprar </button>
-                
-            </div><div class="producto">
-                <img src="./IMG/Herramientas de corte.jpg" alt="Herramienta 3">
-                <h3>Herramientas de corte</h3>
-                <button> Comprar </button>
-                
+                <button id="btnComprar" onclick="agregarProducto('Pinza', 3200)">Comprar</button>
             </div>
-
+            <div class="producto">
+                <h2>$ 6000.-</h2>
+                <img src="./IMG/Herramientas de corte.jpg">
+                <h3>Herramientas de corte</h3>
+                <button id="btnComprar" onclick="agregarProducto('Herramienta de corte', 6000)">Comprar</button>
+            </div>
+        
+        <div id="carrito"></div>
+           
         </div>
+    
+
+    <section class="banner-1"></class>
+    
     </section>
-<section class="banner-1    "> </class>
-</section>
+    
+</main>
+
     <footer>
         <h2 id="contacto">Contacto</h2>
         <p>Email: diegotaras@gmail.com</p>
-        <p>Teléfono: (+54) 11-4559-2572
+        <p>Teléfono: (+54) 1145592572
         
         <a class="fab fa-whatsapp" href="https://wa.me/5491145592572/?text=%20Todo%20Herramientas" target="_blank">
         <img src="./IMG/logo-wasap.png" width="30" height="30"> </a>
     
         </p>
     </footer>
-    
+
+    <script src= "/js/javascript.js"> </script> 
+
 </body>
 </html>
